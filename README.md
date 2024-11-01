@@ -1,18 +1,22 @@
-## Getting Started
+# Lista de Tarefas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto em Java é uma aplicação simples de gerenciamento de tarefas, utilizando a interface `Set` para armazenar um conjunto de objetos do tipo `Tarefa`. Cada tarefa possui uma descrição e um indicador booleano que mostra se a tarefa foi concluída ou não.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+A classe `ListaTarefas` implementa os seguintes métodos:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **adicionarTarefa(String descricao)**: Adiciona uma nova tarefa ao conjunto.
+- **removerTarefa(String descricao)**: Remove uma tarefa do conjunto pela descrição, se estiver presente.
+- **exibirTarefas()**: Exibe todas as tarefas da lista.
+- **contarTarefas()**: Conta o número total de tarefas na lista.
+- **obterTarefasConcluidas()**: Retorna um conjunto com as tarefas concluídas.
+- **obterTarefasPendentes()**: Retorna um conjunto com as tarefas pendentes.
+- **marcarTarefaConcluida(String descricao)**: Marca uma tarefa como concluída pela descrição.
+- **marcarTarefaPendente(String descricao)**: Marca uma tarefa como pendente pela descrição.
+- **limparListaTarefas()**: Remove todas as tarefas da lista.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Tecnologias Utilizadas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Java SE
+- Interface `Set` para garantir a unicidade das tarefas.
